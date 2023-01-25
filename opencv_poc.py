@@ -18,7 +18,19 @@ cv.imshow('Rectangle',blank)
 
 cv.line(blank,(0,0),(250,250),(255,255,255),thickness=7)
 cv.imshow('line',blank)
-cv.putText(blank,'Hello',(225,225),cv.FONT_HERSHEY_SIMPLEX,(0,255,0))
-cv.imshow(blank)
+cv.putText(blank,'Hello',(225,225),cv.FONT_HERSHEY_SIMPLEX,1.0,(0,255,0),2)
+
 cv.waitKey(0)
+
+
+
+
+
+img=cv.imread('Electricity.png')
+gray=cv.cvtColor(img,cv.COLOR_BAYER_BG2BGR)
+cv.imshow('Gray',gray)
+
+blur=cv.GaussianBlur(img,(3,3),cv.BORDER_DEFAULT)
+cv.imshow('Blurred',blur)
+
 
