@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-
+# https://www.javatpoint.com/opencv
 
 blank = np.zeros((500,500,3),dtype='uint8')
 # uint8 is image type
