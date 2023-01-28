@@ -2,6 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # https://www.javatpoint.com/opencv
+# https://medium.com/featurepreneur/understanding-the-concept-of-channels-in-an-image-6d59d4dafaa9
 
 blank = np.zeros((500,500,3),dtype='uint8')
 # uint8 is image type
